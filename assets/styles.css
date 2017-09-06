@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  justify-content: center;
+  background-image: url('background.jpg');
+  align-items: center;
+  margin-bottom: 1000px;
+  height: 1200px;
+}
+
+.game-area {
+  display: flex;
+  background-image: url('map.jpg');
+  width: 615px;
+  height: 403px;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCanvas {
+  border: 1px solid red;
+  width: 459px;
+  height: 249px;
+}
