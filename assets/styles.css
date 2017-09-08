@@ -7,9 +7,11 @@ body {
 .main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-image: url('background.jpg');
   align-items: center;
   height: 1120px;
+  /*width: 615px;*/
 }
 
 .game-area {
@@ -25,4 +27,10 @@ body {
   /*border: 1px solid red;*/
   width: 459px;
   height: 249px;
+}
+
+#count-canvas {
+  /*border: 1px solid red;*/
+  align-self: flex-start;
+  /*height: 70px;*/
 }
