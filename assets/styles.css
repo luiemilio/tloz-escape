@@ -1,21 +1,35 @@
+@font-face {
+  font-family: :"triforce";
+  src:url("./assets/Triforce.ttf");
+}
+
 body {
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*width: 900px;*/
+  font-family: "triforce";
 }
 
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  background-image: url('background.jpg');
+  background-color: #272833;
   align-items: center;
   height: 1120px;
-  /*width: 615px;*/
+}
+
+.main img {
+  margin-top: 50px;
+  width: 500px;
+  height: 250px;
+}
+
+.submain {
+  display: flex;
+  flex-direction: row;
 }
 
 .game-area {
   display: flex;
+  position: relative;
   background-image: url('map.jpg');
   width: 615px;
   height: 403px;
@@ -23,14 +37,98 @@ body {
   align-items: center;
 }
 
+.game-area canvas {
+  position: absolute;
+}
+
 #myCanvas {
-  /*border: 1px solid red;*/
   width: 459px;
   height: 249px;
 }
 
+#screen-canvas {
+  width: 615px;
+  height: 403px;
+}
+
 #count-canvas {
-  /*border: 1px solid red;*/
   align-self: flex-start;
-  /*height: 70px;*/
+}
+
+.left-div {
+  margin-top: 56px;
+  background-image: url('link-sidebar.png');
+  background-size: cover;
+  background-position: center;
+  width: 220px;
+  height: 398px;
+}
+
+.right-div {
+  margin-top: 56px;
+  /*border: 1px solid red;*/
+  width: 200px;
+  height: 398px;
+}
+
+.wasd {
+  /*border: 1px solid red;*/
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wasd h1 {
+  color: #ffffff;
+}
+
+.wasd img {
+  /*border: 1px solid red;*/
+  height: 50px;
+  width: 50px;
+}
+
+.top {
+  margin-top: -70px;
+  display: flex;
+  justify-content: row;
+}
+
+
+.bottom {
+  margin-top: -45px;
+  display: flex;
+  justify-content: row;
+}
+
+.arrows {
+  /*border: 1px solid red;*/
+  /*margin-top: -10px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrows img {
+  width: 50px;
+  height: 50px;
+}
+
+.arrows h1 {
+  color: #ffffff;
+}
+
+.footer {
+  /*border: 1px solid red;*/
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+}
+
+.footer img {
+  height: 35px;
+  width: 40px;
+  margin: 10px;
 }
