@@ -8,6 +8,7 @@ body {
 }
 
 .main {
+  /*margin-top: 50px;*/
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -17,15 +18,30 @@ body {
 
 }
 
-.main img {
-  margin-top: 50px;
-  width: 500px;
-  height: 250px;
+.logo {
+  margin-top: 25px;
+  width: 300px;
+  height: 150px;
 }
 
 .submain {
+  /*margin-top: -0px;*/
   display: flex;
   flex-direction: row;
+}
+
+.score-audio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-audio button {
+  height: 20px;
+}
+
+.score-audio canvas {
+  /*border: 1px solid red;*/
 }
 
 .game-area {
@@ -66,10 +82,18 @@ body {
 }
 
 .right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 56px;
   /*border: 1px solid red;*/
   width: 200px;
   height: 398px;
+}
+
+.right-div img {
+  margin-top: 50px;
 }
 
 .wasd {
@@ -132,4 +156,12 @@ body {
   height: 35px;
   width: 40px;
   margin: 10px;
+}
+
+
+/* Give the player a height & width of 0. Otherwise the player is visible on mobile devices (tested on iPhone 5). */
+
+#player {
+  height: 0;
+  width: 0
 }

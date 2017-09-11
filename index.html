@@ -7,6 +7,10 @@
         src:url("./assets/Triforce.ttf");
       }
     </style>
+    <audio id="player" volume="0.1">
+      <source src="./assets/theme.mp3" type="audio/mp3"/>
+    </audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <meta charset="utf-8">
@@ -14,13 +18,16 @@
   </head>
   <body>
     <div class="main">
-      <img src="./assets/logo.png" alt="">
+      <img class="logo" src="./assets/logo.png" alt="">
       <div class="submain">
         <div class="left-div">
 
         </div>
         <div class="canvases">
-          <canvas id="count-canvas" width="200", height="50"></canvas>
+          <div class="score-audio">
+            <canvas id="count-canvas" width="200", height="50"></canvas>
+            <!-- <button type="button" name="button">Audio: on</button> -->
+          </div>
           <div class="game-area">
             <canvas id="screen-canvas"></canvas>
             <canvas id="myCanvas"></canvas>
@@ -62,11 +69,13 @@
             <img src="./assets/AngelList_White_Victory_Hand.png">
           </a>
         </div>
+
       </div>
     </div>
 
   </body>
   <script type="text/javascript" src="./lib/bundle.js"></script>
+  <!-- <script type="text/javascript" src="./lib/audio_button.js"></script> -->
 </html>
 
 
