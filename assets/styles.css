@@ -39,6 +39,15 @@ body {
 .score-audio button {
   height: 20px;
   align-self: flex-end;
+  background-color: #E60012;
+  color: white;
+  border-radius: 10px;
+  box-shadow: none;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
 }
 
 .score-audio canvas {

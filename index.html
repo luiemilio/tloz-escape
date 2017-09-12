@@ -7,7 +7,7 @@
         src:url("./assets/Triforce.ttf");
       }
     </style>
-    <audio id="player" volume="0.1">
+    <audio id="player" autoplay="true">
       <source src="./assets/theme.mp3" type="audio/mp3"/>
     </audio>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,7 +26,7 @@
         <div class="canvases">
           <div class="score-audio">
             <canvas id="count-canvas" width="200", height="50"></canvas>
-            <!-- <button type="button" name="button">Audio: on</button> -->
+            <button type="button" class="btn btn--stripe" name="button" id="audio-btn">Audio: on</button>
           </div>
           <div class="game-area">
             <canvas id="screen-canvas"></canvas>
