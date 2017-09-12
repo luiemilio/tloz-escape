@@ -38,6 +38,7 @@ body {
 
 .score-audio button {
   height: 20px;
+  align-self: flex-end;
 }
 
 .score-audio canvas {
