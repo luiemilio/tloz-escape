@@ -1,0 +1,19 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "tloz-escape",
+        "description": "OpenFin POC",
+        "url": "http://luisespinola.com/tloz-escape/",
+        "uuid": "tloz-escape-oldahu5wj4",
+        "autoShow": true
+    },
+    "runtime": {
+        "arguments": "",
+        "version": "beta"
+    },
+    "shortcut": {
+        "company": "tloz-escape",
+        "description": "tloz-escape",
+        "name": "tloz-escape"
+    }
+}
